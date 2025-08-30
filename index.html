@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimateTask - Animated To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-bg"></div>
+            <h1><i class="fas fa-tasks"></i> AnimateTask</h1>
+            <p class="app-info">Your animated to-do list with smooth interactions</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="What needs to be done?">
+            <button id="add-btn"><i class="fas fa-plus"></i> Add</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-list"></i> All
+            </button>
+            <button class="filter-btn" data-filter="active">
+                <i class="fas fa-clock"></i> Active
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                <i class="fas fa-check-circle"></i> Completed
+            </button>
+        </div>
+
+        <ul id="task-list">
+            <div class="empty-state">
+                <i class="far fa-smile-beam"></i>
+                <p>Your list is empty. Add a task to get started!</p>
+            </div>
+        </ul>
+
+        <div class="stats-section">
+            <span id="total-tasks">Total: 0 tasks</span>
+            <span id="completed-tasks">Completed: 0 tasks</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created as a final project with HTML, CSS, JS & GSAP 
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
